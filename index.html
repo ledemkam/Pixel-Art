@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Probeaufgabe 3 - Pixel Art</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+    <main>
+
+        <header>
+            <h1>Pixel Art</h1>
+        </header>
+
+       <article>
+        <h2>Gridgröße auswahlen</h2>
+        <form>
+            <label for="gridHeight">Grid Height:</label>
+            <input type="number" id="gridHeight" name="height" min="8" max="32" value="8">
+            <label for="gridWidth">Grid Width:</label>
+            <input type="number" id="gridWidth" name="Width" min="8" max="32" value="8">
+            <input type="submit" onclick="makeGrid()" id="submitBtn">
+        </form>
+
+       
+
+    </article>
+    <article>
+        <label>Farbauswahl</label>
+
+       <!-- <input type="color" id="colorPicker" value="#FFF0F5">-->
+
+        <h2>Griddesign</h2>
+
+        <section id="pickerpalette">
+
+            <div  id="colorPicker"style="background:  red;"></div>
+            <div id="colorPicker" style="background:purple ;"></div>
+            <div id="colorPicker" style="background:greenyellow ;"></div>
+            <div id="colorPicker" style="background:blue;"></div>
+            <div id="colorPicker" style="background:yellow ;"></div>
+            <div id="colorPicker" style="background:peru ;"></div>
+            <div id="colorPicker" style="background:white;"></div>
+            <div id="colorPicker" style="background:black ;"></div>
+            <div id="colorPicker" style="background:khaki;"></div>
+            <div id="colorPicker" style="background:violet;"></div>
+            <div id="colorPicker" style="background:orangered;"></div>
+
+            <table id="pixelGrid"></table>
+
+        </section>
+
+    </article>
+       
+    </main>
+
+
+  <script src="assets/js/main.js"></script>
+    
+</body>
+</html>
