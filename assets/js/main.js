@@ -36,3 +36,17 @@ let makeGrid = () => {
       }
    }
 };
+
+//function to convert the HTML to image format
+function downloadimage() {
+   //var container = document.getElementById("image-wrap"); //specific element on page
+   var container = document.getElementById('maincontainer'); // full page
+   html2canvas(container, { allowTaint: true }).then(function (canvas) {
+      var link = document.createElement('a');
+      document.body.appendChild(link);
+      link.download = 'html_image.jpg';
+      link.href = canvas.toDataURL();
+      link.target = '_blank';
+      link.click();
+   });
+}

@@ -6,9 +6,10 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Probeaufgabe 3 - Pixel Art</title>
       <link rel="stylesheet" href="assets/css/style.css" />
+      <script src="assets/js/html2canvas.js"></script>
    </head>
    <body>
-      <main class="maincontainer">
+      <main id="maincontainer">
          <header>
             <h1>Pixel Art</h1>
          </header>
@@ -46,6 +47,10 @@
             <table id="pixelGrid"></table>
          </article>
       </main>
+
+      <button onclick="downloadimage()" class="clickbtn">
+         Click To Download Image
+      </button>
 
       <script src="assets/js/main.js"></script>
    </body>
